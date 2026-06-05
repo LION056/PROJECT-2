@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 20px;
+  }
+  
+  .container {
+  width: 100%;
+  max-width: 500px;
+  }
+  
+  .auth-card {
+  background: #ffffff;
+  
+  padding: 40px 30px;
+  
+  border-radius: 20px;
+  
+  box-shadow:
+  0 10px 30px rgba(0, 0, 0, 0.08);
+  
+  animation: fadeIn 0.3s ease;
+  }
+  
+  h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  
+  font-size: 28px;
+  font-weight: 700;
+  
+  color: #111827;
+  }
+  
+  p {
+  text-align: center;
+  color: #6b7280;
+  
+  margin-bottom: 24px;
+  
+  line-height: 1.5;
+  }
+  
+  input {
+  width: 100%;
+  
+  padding: 14px 16px;
+  
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  
+  font-size: 16px;
+  
+  outline: none;
+  
+  transition: 0.3s ease;
+  
+  margin-bottom: 16px;
+  }
+  
+  input:focus {
+  border-color: #2563eb;
+  }
+  
+  button {
+  width: 100%;
+  
+  padding: 14px;
+  
+  border: none;
+  border-radius: 12px;
+  
+  background: #2563eb;
+  color: white;
+  
+  font-size: 16px;
+  font-weight: 600;
+  
+  cursor: pointer;
+  
+  transition: 0.3s ease;
+  }
+  
+  button:hover {
+  transform: translateY(-2px);
+  }
+  
+  button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  }
+  
+  #resendBtn {
+  margin-top: 12px;
+  
+  background: transparent;
+  color: #2563eb;
+  
+  border: 1px solid #2563eb;
+  }
+  
+  .otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+  margin-bottom: 20px;
+  }
+  
+  .otp-input {
+  width: 50px;
+  height: 55px;
+  
+  text-align: center;
+  
+  font-size: 22px;
+  font-weight: bold;
+  
+  margin-bottom: 0;
+  }
+  
+  #message {
+  min-height: 24px;
+  
+  text-align: center;
+  
+  margin-bottom: 15px;
+  
+  font-weight: 600;
+  }
+  
+  .success {
+  color: #16a34a;
+  }
+  
+  .error {
+  color: #dc2626;
+  }
+  
+  .progress {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 30px;
+  }
+  
+  .progress div {
+  flex: 1;
+  
+  text-align: center;
+  
+  color: #9ca3af;
+  
+  font-size: 14px;
+  font-weight: 600;
+  }
+  
+  .progress .active {
+  color: #2563eb;
+  }
+  
+  @keyframes fadeIn {
+  from {
+  opacity: 0;
+  transform: translateY(10px);
+  }
+  
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  @media (max-width: 480px) {
+  
+  .auth-card {
+  padding: 30px 20px;
+  }
+  
+  .otp-input {
+  width: 42px;
+  height: 50px;
+  }
+  
+  h2 {
+  font-size: 24px;
+  }
+  
+  }
+  .dashboard-info {
+    margin-top: 20px;
+    padding: 16px;
+  
+    background: #f3f4f6;
+  
+    border-radius: 12px;
+  }
+  
+  .dashboard-info p {
+    margin-bottom: 8px;
+  }
