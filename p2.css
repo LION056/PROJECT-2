@@ -83,12 +83,16 @@ button:disabled {
 }
 
 .otp-input {
-  width: 50px;
-  height: 55px;
-  text-align: center;
-  font-size: 22px;
+  width: 55px;
+  height: 60px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 0;
+  line-height: 60px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+
 }
 
 #message {
@@ -408,4 +412,14 @@ label {
   font-weight: 700;
   text-align: center;
   margin-bottom: 12px;
+}
+
+#verifyBtn {
+  background: #08153d;
+  color: white;
+}
+
+#verifyBtn:disabled {
+  background: #08153d;
+  opacity: 0.7;
 }

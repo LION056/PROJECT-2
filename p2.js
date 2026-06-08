@@ -246,13 +246,14 @@ const EXISTING_USERS = [
             "success";
   
           const existingUser =
-            EXISTING_USERS.includes(
+           localStorage.getItem(
               state.email
             );
   
           setTimeout(() => {
   
             if (existingUser) {
+              state.fullName = existingUser;
   
               renderDashboard();
   
@@ -343,7 +344,12 @@ const EXISTING_USERS = [
       }
   
       state.fullName = fullName;
-  
+
+      localStorage.setItem(
+        state.email,
+        fullName
+      );
+
       renderDashboard();
   
     });
