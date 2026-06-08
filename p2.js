@@ -14,43 +14,50 @@ const EXISTING_USERS = [
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
   
-  function renderProgress(currentStep) {
-    return `
-      <div class="progress">
-        <div class="${currentStep >= 1 ? "active" : ""}">
-          Email
-        </div>
-  
-        <div class="${currentStep >= 2 ? "active" : ""}">
-          Verify
-        </div>
-  
-        <div class="${currentStep >= 3 ? "active" : ""}">
-          Dashboard
-        </div>
-      </div>
-    `;
-  }
   
   function renderEmailScreen() {
   
     document.getElementById("screen-container").innerHTML = `
-      ${renderProgress(1)}
+      
   
-      <h2>Welcome</h2>
-  
-      <input
-        type="email"
-        id="email"
-        placeholder="Email Address"
-      >
-  
-      <button
-        id="continueBtn"
-        disabled
-      >
-        Continue
-      </button>
+     <div class="auth-logo">
+    <div class="logo-icon">✦</div>
+    <h1>BudgetBasket</h1>
+  </div>
+
+   <div class="auth-box">
+
+    <h2>Welcome to BudgetBasket</h2>
+
+    <p class="subtitle">
+      Enter your email to sign in or create an account.
+    </p>
+
+    <label>Email</label>
+
+    <input
+      type="email"
+      id="email"
+      placeholder="you@company.com"
+    >
+
+    <button
+      id="continueBtn"
+      disabled
+    >
+      Continue ✉️
+    </button>
+
+    <p class="helper-text">
+      No password needed. We'll email you a one-time code.
+    </p>
+
+  </div>
+  </div>
+
+  <p class="footer-text">
+    By continuing, you agree to our Terms and Privacy Policy.
+  </p>
     `;
   
     const emailInput = document.getElementById("email");
@@ -99,7 +106,7 @@ const EXISTING_USERS = [
   function renderOtpScreen() {
   
     document.getElementById("screen-container").innerHTML = `
-      ${renderProgress(2)}
+      
   
       <h2>Verify Your Email</h2>
   
@@ -292,7 +299,7 @@ const EXISTING_USERS = [
   function renderOnboardingScreen() {
   
     document.getElementById("screen-container").innerHTML = `
-     ${renderProgress(2)}
+   
 
   
       <h2>Complete Your Profile</h2>
