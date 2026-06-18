@@ -765,6 +765,13 @@
    /* ==========================================================================
       INSIGHTS VIEW
       ========================================================================== */
+   .insights-bottom-row {
+     display: grid;
+     grid-template-columns: 1fr 260px;
+     gap: 16px;
+     margin-bottom: 16px;
+   }
+   
    .insights-head {
      display: flex;
      justify-content: space-between;
