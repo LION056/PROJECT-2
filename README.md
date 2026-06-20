@@ -4,7 +4,7 @@ A modern authentication experience built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-https://danielobute.github.io/PROJECT-2/
+https://danielobute.github.io/BudgetBasket/
 
 ## Features
 
