@@ -495,7 +495,7 @@ function renderDashboardView() {
   `;
  
   attachNotifToggle();
-  document.getElementById("redeemBannerBtn").addEventListener("click", () => { setTab("tab-rewards"); renderRewardsView(); });
+  document.getElementById("redeemBannerBtn").addEventListener("click", () => { setTab("tab-rewards"); DEMO_MODE ? renderComingSoon("Rewards") : renderRewardsView(); });
 }
  
 // ==========================================================================
